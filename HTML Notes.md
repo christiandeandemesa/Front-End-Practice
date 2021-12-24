@@ -120,7 +120,7 @@
 ```
 
 # HTML Styles - CSS
-- CSS is used to format the layout (i.e. style) HTML.
+- CSS is used to format the layout (i.e. style) of HTML.
 - Check the CSS Notes.md for more information.
 
 ## Inline CSS
@@ -447,6 +447,7 @@
 ```
 
 ## The HTML <base> element
+```html
 <head>
     <!--There can only be one base element, and it specifies the base URL and/or target for all relative URLs.-->
     <base href="https://www.marvel.com/" target="_blank">
