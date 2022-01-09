@@ -1,0 +1,32 @@
+/*CSS Reset from https://www.joshwcomeau.com/css/custom-css-reset/*/
+*, *::before, *::after {box-sizing: border-box;}
+* {margin: 0;}
+html, body {height: 100%;}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {font: inherit;}
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+#root, #__next {isolation: isolate;}
+
+#title, #img-caption, h2, footer h3 {text-align: center;}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+ul {
+    text-align: left;
+    list-style-position: inside;
+    margin: 0 35%;
+    background-color: rebeccapurple;
+}
