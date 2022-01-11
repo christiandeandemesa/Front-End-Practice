@@ -16,6 +16,9 @@ p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
 
 #title, #img-caption, h2, footer h3 {text-align: center;}
 
+/* Styling */
+header {background-color: blue;}
+
 #image {
     max-width: 100%;
     height: auto;
@@ -26,7 +29,24 @@ p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
 
 ul {
     text-align: left;
-    list-style-position: inside;
-    margin: 0 35%;
-    background-color: rebeccapurple;
+    list-style-position: outside;
+    margin: 0 39%;
+}
+
+/* Styling for tablets */
+@media (max-width: 1200px) {
+    ul {
+        text-align: left;
+        list-style-position: outside;
+        margin: 0 31% 0 32%;
+    }
+}
+
+/* Styling for phones */
+@media (max-width: 768px) {
+    ul {
+        text-align: left;
+        list-style-position: outside;
+        margin: 0 12% 0 13%;
+    }
 }
