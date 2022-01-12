@@ -1,0 +1,71 @@
+/*CSS Reset from https://www.joshwcomeau.com/css/custom-css-reset/*/
+*, *::before, *::after {box-sizing: border-box;}
+* {margin: 0;}
+html, body {height: 100%;}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {font: inherit;}
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+#root, #__next {isolation: isolate;}
+
+#title, #img-caption, h2, footer h3 {text-align: center;}
+
+/* Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("img/background.jpg") fixed;
+    background-size: cover;
+}
+#title {
+    margin-top: 2%;
+    font-size: 40px;
+}
+#description {
+    font-style: italic;
+    font-size: 18px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 255, 0.3);
+    width: 40vw;
+    padding: 2%;
+    margin-top: 2%;
+}
+#name-label, #email-label, #number-label, #dropdown-label, #radio-label, #checkbox-label, #comment-label {
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+#email-label, #number-label, #dropdown-label, #radio-label, #checkbox-label, #comment-label, #submit {margin-top: 4%;}
+#submit {background-color: rgb(180, 255, 255);}
+
+/* Styling for tablets */
+@media(max-width: 1200px) {
+    #title {font-size: 50px;}
+    #description {font-size: 23px;}
+    form {
+        width: 80vw;
+        padding: 4%;
+    }
+}
+
+/* Styling for phones */
+@media (max-width: 768px) {
+    #title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #description {font-size: 13px;}
+    form {
+        width: 100vw;
+        padding: 6%;
+    }
+}

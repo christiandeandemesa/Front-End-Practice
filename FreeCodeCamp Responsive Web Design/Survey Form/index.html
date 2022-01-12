@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to look at my project</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="e.g. John Smith" required>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="e.g. example@email.com" required>
+        <label for="number" id="number-label">Age (optional):</label>
+        <input type="number" id="number" placeholder="e.g. 18" min="0" max="130">
+        <label for="dropdown" id="dropdown-label">Which is your favorite programming language?</label>
+        <select id="dropdown">
+            <option value="c#">C#</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+        <label for="radio" id="radio-label">Which kind of entertainment do you prefer?</label>
+        <label for="music">
+            <input id="music" type="radio" name="entertainment" value="music" checked> Listening/Playing music 
+        </label>
+        <label for="game">
+            <input id="game" type="radio" name="entertainment" value="game"> Playing (video)games 
+        </label>
+        <label for="book">
+            <input id="book" type="radio" name="entertainment" value="book"> Reading books 
+        </label>
+        <label for="tv">
+            <input id="tv" type="radio" name="entertainment" value="tv"> Watching television/movies 
+        </label>
+        <label for="checkbox" id="checkbox-label">Which is your favorite fast food? (check any that apply)</label>
+        <label for="chickfila">
+            <input id="chickfila" type="checkbox" name="food" value="chickfila"> Chick-fil-A 
+        </label>
+        <label for="mcdonald">
+            <input id="mcdonald" type="checkbox" name="food" value="mcdonald"> McDonald's 
+        </label>
+        <label for="starbucks">
+            <input id="starbucks" type="checkbox" name="food" value="starbucks"> Starbucks 
+        </label>
+        <label for="tacobell">
+            <input id="tacobell" type="checkbox" name="food" value="tacobell"> Taco Bell 
+        </label>
+        <label for="comment" id="comment-label">Comments and/or suggestions for other options to the previous questions (optional):</label>
+        <textarea id="comment" placeholder="e.g. I would like a question about music genres" cols="50" rows="3"></textarea>
+        <input type="submit" id="submit" name="Submit">
+    </form>
+</body>
+</html>
