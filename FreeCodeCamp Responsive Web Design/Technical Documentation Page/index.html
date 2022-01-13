@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header id="nav-header">Java Tutorial</header>
+        <hr>
+        <a href="#if_else" class="nav-link">Java If...Else</a>
+        <hr>
+        <a href="#switch" class="nav-link">Java Switch</a>
+        <hr>
+        <a href="#while_loop" class="nav-link">Java While Loops</a>
+        <hr>
+        <a href="#for_loop" class="nav-link">Java For Loops</a>
+        <hr>
+        <a href="#continue" class="nav-link">Java Continue</a>
+        <hr>
+        <div id="img-container">
+            <img src="img/java.png" id="picture">
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="if_else">
+            <header>Java If...Else</header>
+            <h2>The if Statement</h2>
+            <p>The if statement runs a specific block of code if its condition is true.</p>
+            <div class="code">
+                <code>
+                    if (condition) {<br>
+                    <span class="indent">// block of code</span><br>
+                    }
+                </code>
+            </div>
+            <br>
+            <h2>The else Statement</h2>
+            <p>The else statement runs a specific block of code if the previous if statement's condition is false.</p>
+            <div class="code">
+                <code>
+                    if (condition) {<br>
+                    <span class="indent">// block of code if true</span><br>
+                    } else {<br>
+                    <span class="indent">// block of code if false</span><br>
+                    }
+                </code>
+            </div>
+            <br>
+            <h2>The else if Statement</h2>
+            <p>The else if statement runs a specific block of code if its condition is true, and all other previous if and else if statements' conditions are false.</p>
+            <div class="code">
+                <code>
+                    if (condition 1) {<br>
+                    <span class="indent">// block of code if condition 1 is true</span><br>
+                    } else if (condition 2) {<br>
+                    <span class="indent">// block of code if condition 1 is false, and condition 2 is true</span><br>
+                    }
+                </code>
+            </div>
+            <br>
+            <ul>
+                <li>There is a short-hand way to write if-else statements, known as a ternary operator.</li>
+                <ul>
+                    <li>condition ? code block if true : code block if false</li>
+                </ul>
+            </ul>
+        </section>
+        <section class="main-section" id="switch">
+            <header>Java Switch</header>
+            <h2>Java Switch Statements</h2>
+            <p>The switch statement runs a specific code block of code depending on which case the expression triggers.</p>
+            <div class="code">
+                <code>
+                    switch (expression) {<br>
+                    <span class="indent">case x:</span><br>
+                    <span class="indent2">// code block</span><br>
+                    <span class="indent2">break;</span><br>
+                    <span class="indent">case y:</span><br>
+                    <span class="indent2">// code block</span><br>
+                    <span class="indent2">break;</span><br>
+                    <span class="indent">default:</span><br>
+                    <span class="indent2">// code block if no cases are met</span><br>
+                    }
+                </code>
+            </div>
+            <br>
+            <h2>The break Keyword</h2>
+            <p>The break keyword ends and skips a block of code (e.g. switch statements).</p>
+            <br>
+        </section>
+        <section class="main-section" id="while_loop">
+            <header>Java While Loops</header>
+            <h2>Java While Loop</h2>
+            <p>The while loop runs a block of code repeatedley as long as the condition is true.</p>
+            <div class="code">
+                <code>
+                    while (condition) {<br>
+                    <span class="indent">// code block</span><br>
+                    }
+                </code>
+            </div>
+            <br>
+            <h2>The Do/While Loop</h2>
+            <p>The do/while loop is a variation of a while loop that runs a block of code at least once, even if the if condition is initially false.</p>
+            <div class="code">
+                <code>
+                    do {<br>
+                    <span class="indent">// code block</span><br>
+                    }<br>
+                    while (condition);
+                </code>
+            </div>
+        </section>
+        <section class="main-section" id="for_loop">
+            <header>Java For Loops</header>
+            <h2>Java For Loop</h2>
+            <p>The for loop runs a block of code a set number of times.</p>
+            <div class="code">
+                <code>
+                    for (statement 1; statement 2; statement 3) {<br>
+                    <span class="indent">// code block</span><br>
+                    }
+                </code>
+            </div>
+            <ul>
+                <li>Statement 1 executes only once when the for loop starts.</li>
+                <li>Statement 2 defines how many times a block of code runs.</li>
+                <li>Statement 3 executes after every time the block of code executes.</li>
+            </ul>
+            <br>
+            <h2>The For-Each loop</h2>
+            <p>The for-each loop runs a block of code on every element in an array.</p>
+            <div class="code">
+                <code>
+                    for (type variableName : arrayName) {<br>
+                    <span class="indent">// code block</span><br>
+                    }
+                </code>
+            </div>
+        </section>
+        <section class="main-section" id="continue">
+            <header>Java Continue</header>
+            <h2>Java Continue Statement</h2>
+            <p>The continue statement ends a block of code.</p>
+            <p>It differs from the break statement in that subsequent loops will run for continue, but be skipped for break.</p>
+            <div class="code">
+                <code>
+                    for (int i = 0; i < 5; i++) {<br>
+                    <span class="indent">if (i === 1) {</span><br>
+                    <span class="indent2">continue;</span><br>
+                    <span class="indent">}</span><br>
+                    }
+                </code>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
