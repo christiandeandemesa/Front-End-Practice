@@ -1,0 +1,62 @@
+/*CSS Reset from https://www.joshwcomeau.com/css/custom-css-reset/*/
+*, *::before, *::after {box-sizing: border-box;}
+* {margin: 0;}
+html, body {height: 100%;}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {font: inherit;}
+p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
+#root, #__next {isolation: isolate;}
+#title, #img-caption, h2, footer h3 {text-align: center;}
+
+/* Do get content to appear below navbar after clicking anchor link */
+html {scroll-padding-top: 4em;}
+.section {scroll-margin-top: 1em;}
+
+/* Navbar Styling */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+#navbar div {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    float: right;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+/* Welcome Styling */
+#welcome-section {margin-top: 10%;}
+
+/* Project Styling */
+/* Contact Styling */
+
+/* Group Styling */
+.section {height: 100vh;}
+.nav-link, .project h2, #profile-link {font-family: 'Ubuntu', sans-serif;}
+.title {font-family: 'Luxurious Roman', cursive;}
+
+/* Styling for tablets */
+
+@media(max-width: 1200px) {}
+
+
+/* Styling for phones */
+
+@media (max-width: 768px) {}
