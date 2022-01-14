@@ -16,7 +16,7 @@ p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}
 #title, #img-caption, h2, footer h3 {text-align: center;}
 
 /* Do get content to appear below navbar after clicking anchor link */
-html {scroll-padding-top: 4em;}
+html {scroll-padding-top: 2.5em;}
 .section {scroll-margin-top: 1em;}
 
 /* Navbar Styling */
@@ -25,6 +25,8 @@ html {scroll-padding-top: 4em;}
     top: 0;
     width: 100%;
     height: 10%;
+    background-color: black;
+    z-index: 1;
 }
 #navbar div {
     height: 100%;
@@ -39,24 +41,137 @@ html {scroll-padding-top: 4em;}
     font-size: 1.5rem;
     transition: 0.5s;
     font-weight: bold;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+    border-bottom: 2px solid black;
+}
+.nav-link:hover {
+    background-color: #334EFF;
+    color: #FFE433;
+    transition: 0.7s;
 }
 
 /* Welcome Styling */
-#welcome-section {margin-top: 10%;}
+#welcome-section {
+    background-color: #334EFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#welcome-section h2 {color: #FFE433;}
 
 /* Project Styling */
+#project-section {background-color: white;}
+#projects {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8%;
+}
+.project {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+.project-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.project:hover .project-inner {transform: rotateY(180deg);}
+.project-front, .project-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+#project1, #project3 {background-color: #FFE433;}
+#project2, #project4 {background-color: #334EFF;}
+.project-back {
+    transform: rotateY(180deg);
+    background-color: white;
+}
+
 /* Contact Styling */
+#contact-section {
+    background-color: #FFE433;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profile-links {
+    width: 40%;
+    margin-top: 13%;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #334EFF;
+    transition: transform 0.5s ease-out;
+}
+.profile-link:hover {transform: translateY(2rem);}
 
 /* Group Styling */
 .section {height: 100vh;}
-.nav-link, .project h2, #profile-link {font-family: 'Ubuntu', sans-serif;}
-.title {font-family: 'Luxurious Roman', cursive;}
+.nav-link, #welcome-section h2, .project h2, #profile-links {font-family: 'Ubuntu', sans-serif;}
+.title {
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 3rem;
+}
+#project-section, #contact-section {text-align: center;}
 
 /* Styling for tablets */
-
-@media(max-width: 1200px) {}
-
+@media(max-width: 1200px) {
+    .nav-link {
+        font-size: 1em;
+        border-bottom: 1px solid black;
+    }
+    .title {font-size: 2rem;}
+    #projects {
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    .project {margin-bottom: 5%;}
+    #project3 {background-color: #334EFF;}
+    #project4 {background-color: #FFE433;}
+    #profile-links {
+        margin-top: 24%;
+        width: 65%;
+    }
+}
 
 /* Styling for phones */
-
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    #navbar {height: 11%;}
+    #navbar div {width: 80%;}
+    .title {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    #welcome-section h2 {font-size: 1.1rem;}
+    #project-section {height: auto;}
+    #project3 {background-color: #FFE433;}
+    #project4 {background-color: #334EFF;}
+    .project-front h2 {font-size: 1.5rem;}
+    #profile-links {
+        margin-top: 12%;
+        flex-direction: column;
+        height: 50%;
+    }
+    .profile-link {font-size: 1.5rem;}
+}
